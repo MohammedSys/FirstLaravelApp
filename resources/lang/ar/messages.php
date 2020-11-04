@@ -15,5 +15,16 @@ return [
 
     'Greeting' => 'أهلا وسهلا بكم في موقعنا',
     'Thanks' => 'شكرا لكم على هذه الزيارة',
+    'The Name field is required' => 'حقل الاسم مطلوب',
+    'Offer Name' => 'اسم العرض',
+    'Offer Details'=> 'تفاصيل العرض',
+    'Offer Price' => 'سعر العرض',
+    'Add Offer' => 'إضافة عرض',
+    'The Details field is required' => 'حقل التفاصيل مطلوب',
+    'Price must be numeric' => 'حقل السعر يجب أن يكون أرقام',
+    'Record added Successfully' => 'تم إضافة الحقل بنجاح',
+    'Submit' => 'حفظ',
+    'Offer No' => 'رقم العرض',
+    'Price' => 'السعر',
 
 ];

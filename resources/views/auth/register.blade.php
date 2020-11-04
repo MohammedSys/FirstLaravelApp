@@ -83,6 +83,9 @@
                             </div>
                         </div>
                     </form>
+                    <a href = "{{url('redirect/facebook')}}">
+                            Register with Facebook
+                    </a>
                 </div>
             </div>
         </div>
