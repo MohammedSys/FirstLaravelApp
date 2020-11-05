@@ -50,7 +50,11 @@ Route::group(['prefix'=>LaravelLocalization::setLocale(),
     ],function(){
     Route::group(['prefix' => 'offers'],function(){
             Route::get('create', 'OfferController@create')->name('offers.create');
+            Route::post('store', 'OfferController@store')->name('offers.store');
+            Route::get('edit/{offer_id}', 'OfferController@editOffer')->name('offers.edit');
+            Route::post('update/{offer_id}', 'OfferController@updateOffer')->name('offers.update');
+
             Route::get('show', 'OfferController@getOffers')->name('offers.show');
     });
-    Route::post('store', 'OfferController@store')->name('offers.store');
+
 });

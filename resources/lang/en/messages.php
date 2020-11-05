@@ -26,5 +26,8 @@ return [
     'Submit' => 'Submit',
     'Offer No' => 'Offer Number',
     'Price' => 'Price',
+    'Update' => 'Update',
+    'Edit' => 'Edit',
+    'Operation' => 'Operation',
 
 ];

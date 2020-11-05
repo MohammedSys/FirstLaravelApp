@@ -102,6 +102,7 @@
             <th scope="col">{{__('messages.Offer Name')}}</th>
             <th scope="col">{{__('messages.Price')}}</th>
             <th scope="col">{{__('messages.Offer Details')}}</th>
+            <th scope="col">{{__('messages.Operation')}}</th>
         </tr>
         </thead>
         <tbody>
@@ -112,6 +113,7 @@
             <td>{{$offer -> name}}</td>
             <td>{{$offer -> price}}</td>
             <td>{{$offer -> details}}</td>
+            <td><a href="{{route('offers.edit',$offer->id)}}" class="btn btn-success">{{__('messages.Edit')}}</a></td>
         </tr>
         @endforeach
         </tbody>

@@ -26,5 +26,7 @@ return [
     'Submit' => 'حفظ',
     'Offer No' => 'رقم العرض',
     'Price' => 'السعر',
-
+    'Update' => 'تحديث',
+    'Edit' => 'تحرير',
+    'Operation'=>'الإجراءات '
 ];

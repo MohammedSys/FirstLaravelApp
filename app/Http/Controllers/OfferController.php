@@ -64,6 +64,18 @@ class OfferController extends Controller
             'details' => 'required'
         ];
     }*/
+    public function editOffer($offer_id){
+        //$offer = Offer::findOrFail($offer_id);
+        $offer = Offer::find($offer_id);//Search in given id
+        if(!$offer) return redirect()->back();
+            $offer = Offer::select('id','name_ar','name_en','details_ar','details_en','price') -> find($offer_id);
+            return view('offers.edit',compact('offer'));
+        //return $offer_id;
+    }
 
+    public function updateOffer(OfferRequest $request){
+        //Validate using OfferRequest
+        //Insert
+    }
 
 }
