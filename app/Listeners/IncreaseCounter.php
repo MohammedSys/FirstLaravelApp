@@ -3,6 +3,7 @@
 namespace App\Listeners;
 
 use App\Events\VedioVeiwer;
+use App\Events\VideoViewer;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 
@@ -13,7 +14,7 @@ class IncreaseCounter
      *
      * @return void
      */
-    public function __construct(VedioVeiwer $event)
+    public function __construct()
     {
         //
     }
@@ -21,11 +22,16 @@ class IncreaseCounter
     /**
      * Handle the event.
      *
-     * @param  object  $event
+     * @param VideoViewer $event
      * @return void
      */
-    public function handle($event)
+    public function handle(VideoViewer $event)
     {
-        //
+        $this -> updateViewer($event -> video);
+    }
+
+    public function updateViewer($video){
+        $video -> viewers = $video -> viewers + 1;
+        $video -> save();
     }
 }

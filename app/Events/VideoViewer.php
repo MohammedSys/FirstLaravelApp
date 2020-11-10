@@ -2,6 +2,7 @@
 
 namespace App\Events;
 
+use App\Models\Video;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PresenceChannel;
@@ -10,7 +11,7 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-class VedioVeiwer
+class VideoViewer
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
@@ -19,9 +20,11 @@ class VedioVeiwer
      *
      * @return void
      */
-    public function __construct()
+
+    public $video;
+    public function __construct(Video $video)
     {
-        //
+        $this -> video = $video;
     }
 
     /**

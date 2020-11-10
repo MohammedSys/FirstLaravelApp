@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\VideoViewer;
+use App\Models\Video;
 use Illuminate\Http\Request;
 
 class MediaController extends Controller
 {
     public function getViewers(){
-        return view('video');
+        $video = Video::first();
+        event(new VideoViewer($video));
+        return view('video')->with('video', $video);
     }
 }

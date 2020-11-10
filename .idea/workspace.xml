@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c57a4c4-8e10-4c59-8d1c-14aadf5e8263" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Events/VedioVeiwer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Listeners/IncreaseCounter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Video.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Traits/OfferTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_09_000000_create_videos_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_09_153053_add_viewers_to_create_videos_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1604602302.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1604602475.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1604602630.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1604609864.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/video.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/offers/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offers/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/offers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offers/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Events/VedioVeiwer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Events/VideoViewer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Listeners/IncreaseCounter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Listeners/IncreaseCounter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_09_000000_create_videos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_10_141917_create_videos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/video.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/video.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +222,7 @@
       <workItem from="1604321237147" duration="13813000" />
       <workItem from="1604485025349" duration="15872000" />
       <workItem from="1604695870702" duration="9517000" />
-      <workItem from="1604935664072" duration="2182000" />
+      <workItem from="1604935664072" duration="4721000" />
     </task>
     <servers />
   </component>

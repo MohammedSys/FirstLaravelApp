@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Number of Viewers (5)
+                    Number of Viewers ({{$video -> viewers}})
                 </div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/9mDyok46MRM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>

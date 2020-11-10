@@ -17,6 +17,7 @@ class CreateVideosTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->integer('viewers');
+            $table->timestamps();
         });
     }
 
