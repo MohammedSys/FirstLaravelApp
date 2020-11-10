@@ -55,6 +55,7 @@ Route::group(['prefix'=>LaravelLocalization::setLocale(),
             Route::post('update/{offer_id}', 'OfferController@updateOffer')->name('offers.update');
 
             Route::get('show', 'OfferController@getOffers')->name('offers.show');
+            Route::get('videos','MediaController@getViewers');
     });
 
 });

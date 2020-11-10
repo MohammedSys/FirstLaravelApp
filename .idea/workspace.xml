@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c57a4c4-8e10-4c59-8d1c-14aadf5e8263" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/offers/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Events/VedioVeiwer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Listeners/IncreaseCounter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Video.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Traits/OfferTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_09_000000_create_videos_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_09_153053_add_viewers_to_create_videos_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Offers/1604602302.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Offers/1604602475.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Offers/1604602630.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Offers/1604609864.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/video.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/offers/allOffers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offers/allOffers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/offers/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offers/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/offers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offers/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +171,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/offers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -170,11 +183,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\resources\views" />
+      <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\database\migrations" />
       <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\resources\views\offers" />
       <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\resources\views\emails" />
       <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\resources\views\includes" />
-      <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\resources\views" />
-      <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\resources\views\layouts" />
     </key>
   </component>
   <component name="RunManager">
@@ -219,7 +232,9 @@
       <workItem from="1604270605837" duration="1294000" />
       <workItem from="1604319326912" duration="1124000" />
       <workItem from="1604321237147" duration="13813000" />
-      <workItem from="1604485025349" duration="7585000" />
+      <workItem from="1604485025349" duration="15872000" />
+      <workItem from="1604695870702" duration="9517000" />
+      <workItem from="1604935664072" duration="2182000" />
     </task>
     <servers />
   </component>
@@ -284,16 +299,20 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="595" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602533411957" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1604609039471">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1604609039471" />
     <state x="152" y="15" key="SettingsEditor" timestamp="1604257272873">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="142" y="75" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1602863744567" />
     <state x="152" y="15" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1604257272873" />
-    <state x="360" y="176" key="com.intellij.ide.util.TipDialog" timestamp="1604485029578">
+    <state x="360" y="176" key="com.intellij.ide.util.TipDialog" timestamp="1604935662336">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="337" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1603388624983" />
-    <state x="360" y="176" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1604485029578" />
+    <state x="360" y="176" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1604935662336" />
     <state x="0" y="0" width="609" height="680" key="find.popup" timestamp="1602863760214">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

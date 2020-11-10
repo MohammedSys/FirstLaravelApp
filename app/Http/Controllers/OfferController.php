@@ -5,12 +5,14 @@ use App\Http\Requests\OfferRequest;
 use App\Models\Offer;
 
 use App\Http\Controllers\Controller;
+use App\Traits\OfferTrait;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use LaravelLocalization;
 
 class OfferController extends Controller
 {
+    use OfferTrait;
     public function __construct(){
 
     }
@@ -37,8 +39,12 @@ class OfferController extends Controller
         if($validator -> fails()){
             return redirect()->back()->withErrors($validator)-> withInputs($request->all());
         }*/
+        //Save Photo in folder
+        $file_name = $this->saveImage($request -> photo , 'images/offers');
+        //return 'Okey';
         //2- Insert data into database
         Offer::create([
+            'photo' => $file_name,
             'name_en' => $request -> name_en,
             'name_ar' => $request -> name_ar,
             'price' => $request -> price,
@@ -49,6 +55,7 @@ class OfferController extends Controller
         return redirect()->back()->with(['success'=>__('messages.Record added Successfully')]);
         //print "Data inserted Successfully";
     }
+
     //Function for messages validation
     /*protected function getMessages(){
         return $messages = [
@@ -73,9 +80,20 @@ class OfferController extends Controller
         //return $offer_id;
     }
 
-    public function updateOffer(OfferRequest $request){
+    public function updateOffer(OfferRequest $request, $offer_id){
         //Validate using OfferRequest
-        //Insert
+
+        //Check if Offer Exist
+        $offer = Offer::find($offer_id);
+        if(!$offer) return redirect() -> back();
+        //Update Data
+        $offer->update($request -> all());
+        return redirect()->back()->with(['success'=>__('messages.Updated Successfully')]);
+        //If You Wanna Update Individual Fields Use :
+        /*$offer::update([
+            'name_ar' => $request -> name_ar,
+            'name_ar' => $request -> name_en,
+        ]);*/
     }
 
 }

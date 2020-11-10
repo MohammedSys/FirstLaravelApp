@@ -66,7 +66,7 @@
     <body>
     <!--Start Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="{{route('offers.show')}}">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -99,18 +99,25 @@
                     {{Session::get('success')}}
                 </div>
                 @endif
-                <form method="POST" action="{{route('offers.store')}}">
+                <form method="POST" action="{{route('offers.store')}}" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="exampleInputEmail1">{{__('messages.Offer Name ar')}}</label>
-                        <input type="text" class="form-control" name="name_ar" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="{{__('messages.Offer Name ar')}}">
+                        <label for="Photo">Upload Image</label>
+                        <input type="file" class="form-control" name="photo" id="Photo" aria-describedby="imageHelp" >
+                        @error('photo')
+                        <small class="form-text text-danger">{{$message}}</small>
+                        @enderror
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">{{__('messages.Offer Name')}}</label>
+                        <input type="text" class="form-control" name="name_ar" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="{{__('messages.Offer Name')}}">
                         @error('name_ar')
                             <small class="form-text text-danger">{{$message}}</small>
                         @enderror
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">{{__('messages.Offer Name en')}}</label>
-                        <input type="text" class="form-control" name="name_en" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="{{__('messages.Offer Name en')}}">
+                        <label for="exampleInputEmail1">{{__('messages.Offer Name')}}</label>
+                        <input type="text" class="form-control" name="name_en" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="{{__('messages.Offer Name')}}">
                         @error('name_en')
                         <small class="form-text text-danger">{{$message}}</small>
                         @enderror
@@ -124,15 +131,15 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">{{__('messages.Offer Details ar')}}</label>
-                        <input type="text" class="form-control" name="details_ar" placeholder="{{__('messages.Offer Details ar')}}">
+                        <label for="exampleInputEmail1">{{__('messages.Offer Details')}}</label>
+                        <input type="text" class="form-control" name="details_ar" placeholder="{{__('messages.Offer Details')}}">
                         @error('details_ar')
                             <small class="form-text text-danger">{{$message}}</small>
                         @enderror
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">{{__('messages.Offer Details en')}}</label>
-                        <input type="text" class="form-control" name="details_en" placeholder="{{__('messages.Offer Details en')}}">
+                        <label for="exampleInputEmail1">{{__('messages.Offer Details')}}</label>
+                        <input type="text" class="form-control" name="details_en" placeholder="{{__('messages.Offer Details')}}">
                         @error('details_en')
                         <small class="form-text text-danger">{{$message}}</small>
                         @enderror

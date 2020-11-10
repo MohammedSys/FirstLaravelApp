@@ -28,5 +28,7 @@ return [
     'Price' => 'السعر',
     'Update' => 'تحديث',
     'Edit' => 'تحرير',
-    'Operation'=>'الإجراءات '
+    'Operation'=>'الإجراءات ',
+    'Updated Successfully' => 'تم التحديث بنجاح',
+    'Update Offer' => 'تحديث العرض',
 ];

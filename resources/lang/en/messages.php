@@ -29,5 +29,7 @@ return [
     'Update' => 'Update',
     'Edit' => 'Edit',
     'Operation' => 'Operation',
+    'Updated Successfully' => 'Updated Successfully',
+    'Update Offer' => 'Update Offer',
 
 ];
