@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c57a4c4-8e10-4c59-8d1c-14aadf5e8263" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AjaxOfferController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Offers/1605036412.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/ajaxoffers/allOffers.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/ajaxoffers/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/ajaxoffers/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Events/VedioVeiwer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Events/VideoViewer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Listeners/IncreaseCounter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Listeners/IncreaseCounter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_09_000000_create_videos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_10_141917_create_videos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/video.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/video.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Offer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Offer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/Offers/1604602302.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/Offers/1604602475.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/Offers/1604602630.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/Offers/1604609864.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/offers/allOffers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offers/allOffers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +232,7 @@
       <workItem from="1604321237147" duration="13813000" />
       <workItem from="1604485025349" duration="15872000" />
       <workItem from="1604695870702" duration="9517000" />
-      <workItem from="1604935664072" duration="4721000" />
+      <workItem from="1604935664072" duration="19264000" />
     </task>
     <servers />
   </component>
@@ -258,6 +268,10 @@
     </state>
     <state x="321" y="80" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1603392978786" />
     <state x="343" y="86" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1604485083841" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605046666130">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1605046666130" />
     <state x="338" y="27" width="618" height="626" key="#phpunit.xml" timestamp="1602788387839">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -266,11 +280,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="737" y="256" key="ComposerInitDialogKey/0.0.1280.680@0.0.1280.680" timestamp="1600966307199" />
-    <state x="449" y="102" key="FileChooserDialogImpl" timestamp="1604270165828">
+    <state x="449" y="102" key="FileChooserDialogImpl" timestamp="1605025477748">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603391886837" />
-    <state x="449" y="102" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604270165828" />
+    <state x="449" y="102" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605025477748" />
     <state width="595" height="162" key="GridCell.Tab.0.bottom" timestamp="1602533411958">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -296,11 +310,11 @@
     </state>
     <state x="142" y="75" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1602863744567" />
     <state x="152" y="15" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1604257272873" />
-    <state x="360" y="176" key="com.intellij.ide.util.TipDialog" timestamp="1604935662336">
+    <state x="360" y="176" key="com.intellij.ide.util.TipDialog" timestamp="1605096994743">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="337" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1603388624983" />
-    <state x="360" y="176" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1604935662336" />
+    <state x="360" y="176" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1605096994743" />
     <state x="0" y="0" width="609" height="680" key="find.popup" timestamp="1602863760214">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

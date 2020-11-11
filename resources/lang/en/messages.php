@@ -31,5 +31,9 @@ return [
     'Operation' => 'Operation',
     'Updated Successfully' => 'Updated Successfully',
     'Update Offer' => 'Update Offer',
+    'Delete' => 'Delete',
+    'Offer Picture' => 'Offer Picture',
+    'Offer is not Exist' => 'Offer is not Exist',
+    'Offer Deleted Successfully' => 'Offer Deleted Successfully',
 
 ];

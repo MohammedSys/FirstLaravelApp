@@ -31,7 +31,7 @@ class IncreaseCounter
     }
 
     public function updateViewer($video){
-        $video -> viewers = $video -> viewers + 1;
+        $video -> viewers = $video -> viewers +1;
         $video -> save();
     }
 }

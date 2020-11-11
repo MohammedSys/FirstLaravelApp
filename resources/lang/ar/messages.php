@@ -31,4 +31,8 @@ return [
     'Operation'=>'الإجراءات ',
     'Updated Successfully' => 'تم التحديث بنجاح',
     'Update Offer' => 'تحديث العرض',
+    'Delete' => 'حذف',
+    'Offer Picture' => 'صورة العرض',
+    'Offer is not Exist' => 'العرض غير موجود',
+    'Offer Deleted Successfully' => 'تم حذف العرض بنجاح',
 ];

@@ -96,4 +96,16 @@ class OfferController extends Controller
         ]);*/
     }
 
+    public function deleteOffer($offer_id){
+        //Check if Offer Exist
+        $offer =  Offer::find($offer_id);
+        if(!$offer)
+            return redirect()->back()->with(['error' => __('messages.Offer is not Exist')]);
+        //Delete Offer if it's Exist
+        $offer -> delete();
+            return redirect()->route('offers.show')->with(['success'=>__('messages.Offer Deleted Successfully')]);
+
+
+    }
+
 }

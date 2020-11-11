@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Offer extends Model
 {
     protected $table = "offers"; //Use this when you want to a diffrent table name from the model
-    protected $fallable = ['name_ar','name_en','details_ar','details_en','price','created_at','updated_at'];
+    protected $fallable = ['name_ar','name_en','details_ar','details_en','price','photo','created_at','updated_at'];
     protected $hidden = ['created_at','updated_at'];
     /**
      * The alternative to protected $fillable = ['title'];
