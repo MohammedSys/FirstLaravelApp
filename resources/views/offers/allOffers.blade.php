@@ -124,7 +124,7 @@
             <td>{{$offer -> name}}</td>
             <td>{{$offer -> price}}</td>
             <td>{{$offer -> details}}</td>
-            <td><img src="{{URL::asset('images/Offers/'. $offer -> photo)}}" alt="Image not found"></td>
+            <td><img src="{{asset('images/Offers/'. $offer -> photo)}}" width="100px" height="100px" alt="Image not found"></td>
             <td>
                 <a href="{{route('offers.edit',$offer->id)}}" class="btn btn-success">{{__('messages.Edit')}}</a>
                 <a href="{{route('offers.delete',$offer->id)}}" class="btn btn-danger">{{__('messages.Delete')}}</a>

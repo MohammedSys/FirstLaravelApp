@@ -59,8 +59,11 @@ Route::group(['prefix'=>LaravelLocalization::setLocale(),
             Route::get('videos','MediaController@getViewers');
     });
     Route::group(['prefix'=>'ajax-offer'],function (){
-        Route::get('create','AjaxOfferController@create')->name('ajax-offer.create');
-        Route::post('store','AjaxOfferController@store')->name('ajax-offer.store');
+        Route::get('create','AjaxOfferController@create')->name('ajax.offer.create');
+        Route::post('store','AjaxOfferController@store')->name('ajax.offer.store');
+        Route::get('edit/{offer_id}', 'OfferController@editOffer')->name('ajax.offers.edit');
+        Route::get('show','AjaxOfferController@index')->name('ajax.offer.show');
+        Route::post('delete','AjaxOfferController@destroy')->name('ajax.offer.delete');
     });
 });
 

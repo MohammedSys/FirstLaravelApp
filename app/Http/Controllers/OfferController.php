@@ -21,6 +21,7 @@ class OfferController extends Controller
         $offers = Offer::select('id',
             'name_'.LaravelLocalization::getCurrentLocale().' as name',
             'details_'.LaravelLocalization::getCurrentLocale().' as details',
+            'photo',
             'price'
             )->get();
         return view('offers.allOffers',compact('offers'));
