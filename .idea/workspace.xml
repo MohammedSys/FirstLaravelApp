@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c57a4c4-8e10-4c59-8d1c-14aadf5e8263" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1605101483.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1605101561.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1605120065.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1605120259.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1605124051.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1605124119.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1605125972.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1605126684.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1605126820.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1605216371.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1605216431.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1605216619.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1605220850.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Offers/1605222300.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/ajaxoffers/layouts/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AjaxOfferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AjaxOfferController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/ajaxoffers/allOffers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ajaxoffers/allOffers.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ajaxoffers/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ajaxoffers/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/offers/allOffers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offers/allOffers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ajaxoffers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ajaxoffers/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -240,7 +223,7 @@
       <workItem from="1605096977554" duration="4450000" />
       <workItem from="1605119842865" duration="5737000" />
       <workItem from="1605194510117" duration="511000" />
-      <workItem from="1605208935330" duration="12409000" />
+      <workItem from="1605208935330" duration="18483000" />
     </task>
     <servers />
   </component>

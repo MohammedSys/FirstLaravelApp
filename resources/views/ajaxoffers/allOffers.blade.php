@@ -28,8 +28,7 @@
                 <td><img src="{{asset('images/Offers/'. $offer -> photo)}}" width="100px" height="100px" alt="Image not found"></td>
                 <td>
                     <a href="{{route('ajax.offers.edit',$offer->id)}}" class="btn btn-success">{{__('messages.Edit')}}</a>
-                    <a href="{{route('offers.delete',$offer->id)}}" class="btn btn-danger">{{__('messages.Delete')}}</a>
-                    <a href="" offer_id="{{$offer->id}}" id="ajaxDeleteBtn" class="btn btn-danger">AjaxDelete</a>
+                    <a href="" offer_id="{{$offer->id}}" id="ajaxDeleteBtn" class="btn btn-danger">Delete</a>
                 </td>
             </tr>
         @endforeach

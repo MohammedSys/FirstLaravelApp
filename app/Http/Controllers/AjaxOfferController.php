@@ -70,10 +70,10 @@ class AjaxOfferController extends Controller
         //return redirect()->back()->with(['success'=>__('messages.Record added Successfully')]);
         if ($offer)
             /*return json_encode(array('statusCode'=>200));*/
-        return response() -> json([
-            'status'=> true,
-            'msg' => 'Data has been saved',
-            'data' => '',
+            return response() -> json([
+                'status'=> true,
+                'msg' => 'Data has been saved',
+                'data' => '',
         ]);
         else
             return response() -> json([
@@ -101,9 +101,18 @@ class AjaxOfferController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request)
     {
-        //
+        $offer = Offer::find($request -> offer_id);
+        if(!$offer)
+            return response()->json([
+                'status' => false,
+                'msg' => 'Item is not found',
+            ]);
+
+        $offer = Offer::select('id','name_ar','name_en','details_ar','details_en','price') -> find($request -> offer_id);
+        return view('ajaxoffers.edit',compact('offer'));
+
     }
 
     /**
@@ -113,9 +122,29 @@ class AjaxOfferController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        //Check if Offer Exist
+        $offer = Offer::find($request -> offer_id);
+        if(!$offer)
+            return response()->json([
+                'status' => false,
+                'msg' => 'Item is not found'
+            ]);
+        //Update Data
+        //$offer->update($request -> all());
+        $offer->update([
+            'id'=> $request -> offer_id,
+            'name_ar' => $request -> name_ar,
+            'name_en' => $request -> name_en,
+            'details_ar' => $request -> details_ar,
+            'details_en' => $request -> details_en,
+            'price' => $request -> price,
+        ]);
+            return response()->json([
+                'status' => true,
+                'msg' => 'Item has been updated Successfully'
+            ]);
     }
 
     /**
