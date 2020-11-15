@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3c57a4c4-8e10-4c59-8d1c-14aadf5e8263" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/CustomAuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckAge.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/HelpDesk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HelpDesk.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AjaxOfferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AjaxOfferController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ajaxoffers/allOffers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ajaxoffers/allOffers.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ajaxoffers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ajaxoffers/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +80,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
@@ -147,12 +170,12 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -164,9 +187,14 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\app" />
+      <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\app\Models" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\resources\views" />
       <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\database\migrations" />
@@ -181,6 +209,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -223,12 +252,27 @@
       <workItem from="1605096977554" duration="4450000" />
       <workItem from="1605119842865" duration="5737000" />
       <workItem from="1605194510117" duration="511000" />
-      <workItem from="1605208935330" duration="18483000" />
+      <workItem from="1605208935330" duration="19602000" />
+      <workItem from="1605290847351" duration="599000" />
+      <workItem from="1605295172970" duration="15206000" />
+      <workItem from="1605379280839" duration="486000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -273,11 +317,15 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="737" y="256" key="ComposerInitDialogKey/0.0.1280.680@0.0.1280.680" timestamp="1600966307199" />
-    <state x="449" y="102" key="FileChooserDialogImpl" timestamp="1605025477748">
+    <state x="449" y="102" key="FileChooserDialogImpl" timestamp="1605363634084">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603391886837" />
-    <state x="449" y="102" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605025477748" />
+    <state x="449" y="102" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605363634084" />
+    <state width="320" height="182" key="Git.Branch.Popup" timestamp="1605296016376">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="320" height="182" key="Git.Branch.Popup/0.0.1366.728@0.0.1366.728" timestamp="1605296016376" />
     <state width="595" height="162" key="GridCell.Tab.0.bottom" timestamp="1602533411958">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -298,21 +346,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1605219998379" />
-    <state x="152" y="15" key="SettingsEditor" timestamp="1604257272873">
+    <state x="152" y="15" key="SettingsEditor" timestamp="1605309586976">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="142" y="75" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1602863744567" />
-    <state x="152" y="15" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1604257272873" />
-    <state x="360" y="176" key="com.intellij.ide.util.TipDialog" timestamp="1605194519456">
+    <state x="152" y="15" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1605309586976" />
+    <state x="360" y="176" key="com.intellij.ide.util.TipDialog" timestamp="1605290845859">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="337" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1603388624983" />
-    <state x="360" y="176" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1605194519456" />
-    <state x="0" y="0" width="650" height="728" key="find.popup" timestamp="1605126644838">
+    <state x="360" y="176" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1605290845859" />
+    <state x="0" y="0" width="650" height="728" key="find.popup" timestamp="1605309657159">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="0" width="609" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1602863760214" />
-    <state x="0" y="0" width="650" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1605126644838" />
+    <state x="0" y="0" width="650" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1605309657159" />
     <state x="665" y="1" width="718" height="726" key="search.everywhere.popup" timestamp="1604506174597">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

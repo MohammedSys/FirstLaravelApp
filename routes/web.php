@@ -36,6 +36,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');*/
 /*=======End Studying================*/
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\LaravelLocalization;
+
 Auth::routes(['verify'=>true]);
 
 Route::get('/home', 'HomeController@index')->name('home') -> middleware('verified');
@@ -45,7 +49,7 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/redirect/{service}', 'SocialController@redirect');
 Route::get('/callback/{service}', 'SocialController@callback');
 
-Route::group(['prefix'=>LaravelLocalization::setLocale(),
+Route::group(['prefix'=> (new LaravelLocalization)->setLocale(),
     'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
     ],function(){
     Route::group(['prefix' => 'offers'],function(){
@@ -67,5 +71,10 @@ Route::group(['prefix'=>LaravelLocalization::setLocale(),
         Route::post('update', 'AjaxOfferController@update')->name('ajax.offers.update');
     });
 });
+################################ Start Authentication & Guards #############################################3
+Route::group(['middleware'=>'CheckAge','namespace'=>'Auth'],function(){
+    Route::get('Adults','CustomAuthController@adult')->name('adult')->middleware('CheckAge');
+});
+################################ End Authentication & Guards #############################################3
 
 
