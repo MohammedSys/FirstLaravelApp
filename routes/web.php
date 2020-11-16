@@ -45,7 +45,6 @@ Auth::routes(['verify'=>true]);
 Route::get('/home', 'HomeController@index')->name('home') -> middleware('verified');
 Route::get('/', 'HomeController@index')->name('home');
 
-
 Route::get('/redirect/{service}', 'SocialController@redirect');
 Route::get('/callback/{service}', 'SocialController@callback');
 
@@ -75,6 +74,5 @@ Route::group(['prefix'=> (new LaravelLocalization)->setLocale(),
 Route::group(['middleware'=>'CheckAge','namespace'=>'Auth'],function(){
     Route::get('Adults','CustomAuthController@adult')->name('adult')->middleware('CheckAge');
 });
+Route::get('NotAdult','Auth\CustomAuthController@NotAdult')->name('Not.Adult');
 ################################ End Authentication & Guards #############################################3
-
-

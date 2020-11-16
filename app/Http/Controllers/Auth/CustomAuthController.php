@@ -10,4 +10,7 @@ class CustomAuthController extends Controller
     public function adult(){
         return view('customAuth.index');
     }
+    public function NotAdult(){
+        return view('customAuth.NotAllowed');
+    }
 }

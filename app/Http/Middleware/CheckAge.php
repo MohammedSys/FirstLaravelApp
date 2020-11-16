@@ -4,6 +4,8 @@ namespace App\Http\Middleware;
 
 use Closure;
 
+use Auth;
+
 class CheckAge
 {
     /**
@@ -15,10 +17,11 @@ class CheckAge
      */
     public function handle($request, Closure $next)
     {
-        //$age = Auth::user['age'];
-        //if($age < 15)
-            //print_r ($age);
-            //return ($age);
+        //Middleware Logic
+        $age = Auth::user() -> age;
+        if($age < 15){
+            return redirect()->route('Not.Adult');
+        }
         return $next($request);
     }
 }
