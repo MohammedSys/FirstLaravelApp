@@ -76,3 +76,7 @@ Route::group(['middleware'=>'CheckAge','namespace'=>'Auth'],function(){
 });
 Route::get('NotAdult','Auth\CustomAuthController@NotAdult')->name('Not.Adult');
 ################################ End Authentication & Guards #############################################3
+Route::group(['prefix'=>'learning'],function(){
+    Route::get('site','ElearningController@index')->name('site')->middleware('auth:web');
+    Route::get('admin','ElearningController@admin')->name('admin')->middleware('auth:admin');
+});

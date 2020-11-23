@@ -19,19 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c57a4c4-8e10-4c59-8d1c-14aadf5e8263" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/CustomAuthController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckAge.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/HelpDesk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HelpDesk.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="3c57a4c4-8e10-4c59-8d1c-14aadf5e8263" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,7 +167,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -191,16 +179,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\app" />
-      <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\app\Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\app\Models" />
       <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\resources\views" />
       <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\database\migrations" />
       <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\resources\views\offers" />
       <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\resources\views\emails" />
-      <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\resources\views\includes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\app" />
+      <recent name="C:\xampp\htdocs\Laravel-Apps\HelpDesk\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -256,6 +244,7 @@
       <workItem from="1605290847351" duration="599000" />
       <workItem from="1605295172970" duration="15206000" />
       <workItem from="1605379280839" duration="486000" />
+      <workItem from="1606106134459" duration="3308000" />
     </task>
     <servers />
   </component>
@@ -286,15 +275,20 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#Composer/0.0.1280.680@0.0.1280.680" timestamp="1600799613999" />
-    <state x="233" y="3" key="#Notifications" timestamp="1602789532770">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="249" y="3" key="#Notifications" timestamp="1606107467810">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="233" y="3" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1602789532770" />
+    <state x="249" y="3" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1606107467810" />
     <state x="390" y="0" key="#PHP" timestamp="1605209240379">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="365" y="0" key="#PHP/0.0.1280.680@0.0.1280.680" timestamp="1602862381000" />
     <state x="390" y="0" key="#PHP/0.0.1366.728@0.0.1366.728" timestamp="1605209240379" />
+    <state x="391" y="100" key="#Servers" timestamp="1606111581777">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="391" y="100" key="#Servers/0.0.1366.728@0.0.1366.728" timestamp="1606111581777" />
     <state x="233" y="3" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602788262625">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -304,10 +298,10 @@
     </state>
     <state x="321" y="80" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1603392978786" />
     <state x="343" y="86" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1605122747439" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605046666130">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606111357970">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1605046666130" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606111357970" />
     <state x="361" y="29" width="618" height="626" key="#phpunit.xml" timestamp="1605209241783">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -342,6 +336,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="595" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602533411957" />
+    <state x="462" y="87" key="NewPhpClassDialog" timestamp="1606111288698">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1606111288698" />
     <state x="517" y="287" key="NewPhpFileDialog" timestamp="1605219998379">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
